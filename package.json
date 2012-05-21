@@ -1,0 +1,9 @@
+{
+  "name": "freshbooks.js"
+  , "description": "Node.js wrapper for FreshBooks (www.freshbooks.com) API"
+  , "version": "0.0.1"
+  , "author": "Marc Loney <marc@metacrash.com.au>"
+  , "dependencies": {
+    "libxmljs": "0.5.4"
+  }
+}
