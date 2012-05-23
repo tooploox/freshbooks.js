@@ -8,7 +8,7 @@ Freshbooks.js is a node.js module providing a wrapper to the FreshBooks API. Thi
   
 This module uses [libxmljs](https://github.com/polotek/libxmljs) so requires the installation of *libxml2* and *libxml2-devel* (*libxml2-dev* on Debian).
 
-  % sudo apt-get install libxml2 libxml2-dev
+  $ sudo apt-get install libxml2 libxml2-dev
 
 ## License
 

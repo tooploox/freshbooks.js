@@ -1,4 +1,4 @@
-var FreshBooks = require('../lib/freshbooks'),
+var FreshBooks = require('../'),
     freshbooks,
     invoice;
 

@@ -1,1 +1,1 @@
-module.exports = exports = require("./lib/freshbooks");
+module.exports = exports = require("./lib");
