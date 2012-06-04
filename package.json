@@ -1,24 +1,17 @@
 {
   "name": "freshbooks"
+  , "version": "0.0.2"
   , "description": "Node.js wrapper for FreshBooks (www.freshbooks.com) API"
-  , "version": "0.0.1"
   , "author": "Marc Loney <marc@metacrash.com.au>"
   , "homepage": "https://github.com/Metacrash/freshbooks.js"
-  , "dependencies": {
-    "libxmljs": "0.5.4"
-  }
+  , "dependencies": { "libxmljs": "0.5.4" }
+  , "main": "index"
+  , "engines": { "node": ">= 0.6.x" }
+  , "devDependencies": { "mocha": "0.3.x" }
+  , "scripts": { "test": "make test" }
+  , "publishConfig": { "tag": "0.0.2" }
   , "repository": {
       "type": "git"
     , "url": "git://github.com/Metacrash/freshbooks.js.git"
-  }
-  , "main": "index"
-  , "engines": {
-      "node": ">= 0.6.x"
-  }
-  , "devDependencies": {
-    "mocha": "0.3.x"
-  }
-  , "publishConfig": {
-    "tag": "0.0.1"
   }
 }
