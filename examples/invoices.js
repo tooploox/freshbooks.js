@@ -44,7 +44,7 @@ invoice.list({client_id: 2},function(err,invoices) {
       console.log(invoice.invoice_id);
     });
   }
-});*/
+});
 
 /**
  * Creates an Invoice.
