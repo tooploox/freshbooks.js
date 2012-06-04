@@ -7,12 +7,9 @@ describe('Expense', function() {
 
   describe("create()", function() {
     it("should create a new expense", function(done) {
-      expense.client_id = 2;
-
-      expense.lines.push({name: 'Test'
-                        , unit_cost: '5.00'
-                        , quantity: '5'
-                        , type: 'Item'});
+      expense.staff_id = 1;
+      expense.category_id = 1;
+      expense.amount = '20.00';
 
       expense.create(function(err, expense) {
         done(err);
@@ -22,7 +19,7 @@ describe('Expense', function() {
 
   describe("update()", function() {
     it("should update an expense", function(done) {
-      expense.notes = "Lorem Ipsum";
+      expense.amount = '25.00';
       expense.update(function(err, expense) {
         done(err);
       });
