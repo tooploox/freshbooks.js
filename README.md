@@ -3,7 +3,11 @@
 Freshbooks.js is a node.js module providing a wrapper to the 
 [FreshBooks](http://www.freshbooks.com) API.
 
-**Note:** This project is very much a *WORK IN PROGRESS*. So far I've 
+**Update 5/6:** I've implimented about 75% of the API. Most of the core features 
+are working but i'm still working through some minor issues. Tests are working 
+now though!
+
+**Update 4/6:** This project is very much a *WORK IN PROGRESS*. So far I've 
 implimented the majority of the Invoice API and am tidying up the code before 
 launching into the other APIs. I've also decided
 to take some liberties on some aspects of the API, ie replacing 
