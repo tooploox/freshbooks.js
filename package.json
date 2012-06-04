@@ -13,7 +13,10 @@
   }
   , "main": "index"
   , "engines": {
-      "node": ">= 0.6.0"
+      "node": ">= 0.6.x"
+  }
+  , "devDependencies": {
+    "mocha": "0.3.x"
   }
   , "publishConfig": {
     "tag": "0.0.1"
