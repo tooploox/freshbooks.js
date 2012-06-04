@@ -38,7 +38,7 @@ describe('Invoices', function() {
   });  
   
   describe("list()", function() {
-    it("should list an array of inovices", function(done) {
+    it("should list an array of invoices", function(done) {
       invoice.list({"client_id": invoice.client_id}, function(err, invoices) {
         done(err);
       });
