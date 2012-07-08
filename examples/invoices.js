@@ -1,7 +1,4 @@
-var FreshBooks = require('../'),
-    freshbooks,
-    invoice;
-
+var FreshBooks = require('../');
 /**
  * Exposes FreshBooks HTTP Client.
  * 
@@ -9,10 +6,9 @@ var FreshBooks = require('../'),
  * @param {String} token
  * @api public
  */
- 
-freshbooks = new FreshBooks("https://freshbooksjs.freshbooks.com/api/2.1/xml-in","59dbd7310470641ff2332bd016ac2e4e");
 
-invoice = freshbooks.Invoice();
+var freshbooks = new FreshBooks("https://freshbooksjs.freshbooks.com/api/2.1/xml-in","59dbd7310470641ff2332bd016ac2e4e")
+  , invoice = new freshbooks.Invoice();
 
 /**
  * Gets an Invoice.

@@ -1,7 +1,36 @@
 #Freshbooks.js
 
-Freshbooks.js is a node.js module providing a wrapper to the 
+Freshbooks.js is a node.js module providing a wrapper to the  
 [FreshBooks](http://www.freshbooks.com) API.
+
+## Installation
+
+    $ npm install freshbooks
+        
+Note: This module utilises [libxmljs](https://github.com/polotek/libxmljs). You 
+will need have the **libxml2** library installed and also the **libxml2-devel** 
+(**libxml2-dev** on debian systems) package. This comes with the `xml2-config`
+utility that is needed for compiling.  **This command must be in your path.**
+
+## Example
+
+    var FreshBooks = require("freshbooks");
+    
+    var freshbooks = new FreshBooks(URL,TOKEN)
+      , invoice = freshbooks.Invoice();
+
+    invoice.get(INVOICE_ID, function(err, invoice) {
+      if(err) {
+        console.log(err);
+      } else {
+        console.log(invoice.number);
+      }
+    });
+
+## Changelog
+
+**Update 8/7:** We've just entered version 0.1.0! All required API features are 
+now implemented excluding callback and system.
 
 **Update 5/6:** I've implimented about 75% of the API. Most of the core features 
 are working but i'm still working through some minor issues. Tests are working 
@@ -13,30 +42,6 @@ launching into the other APIs. I've also decided
 to take some liberties on some aspects of the API, ie replacing 
 invoice.lines.add/delete/update methods with Array.pop/push, as frankly there 
 are better ways to interact with the API in JS than is currently implimented.
-
-## Installation
-
-    $ npm install freshbooks
-    
-Note: This module utilises [libxmljs](https://github.com/polotek/libxmljs). You 
-will need have the **libxml2** library installed and also the **libxml2-devel** 
-(**libxml2-dev** on debian systems) package. This comes with the `xml2-config`
-utility that is needed for compiling.  **This command must be in your path.**
-
-## Example
-
-    require("freshbooks");
-    
-    var freshbooks = new FreshBooks("https://freshbooksjs.freshbooks.com/api/2.1/xml-in","59dbd7310470641ff2332bd016ac2e4e");
-    var invoice = freshbooks.Invoice();
-
-    invoice.get(4368, function(err, invoice) {
-      if(err) {
-        console.log(err);
-      } else {
-        console.log(invoice.invoice_id);
-      }
-    });
 
 ## License
 

@@ -3,7 +3,7 @@ var assert = require('assert')
 
 describe('Payment', function() {
   var freshbooks = new FreshBooks("https://freshbooksjs.freshbooks.com/api/2.1/xml-in","59dbd7310470641ff2332bd016ac2e4e")
-    , payment = freshbooks.Payment();
+    , payment = new freshbooks.Payment();
 
   describe("create()", function() {
     it("should create a new payment", function(done) {
@@ -17,7 +17,7 @@ describe('Payment', function() {
   });
 
   describe("update()", function() {
-    it("should update an payment", function(done) {
+    it("should update a payment", function(done) {
       payment.amount = "25.00";
       
       payment.update(function(err, payment) {
@@ -27,7 +27,7 @@ describe('Payment', function() {
   });
 
   describe("get()", function() {
-    it("should get an payment", function(done) {
+    it("should get a payment", function(done) {
       payment.get(payment.payment_id, function(err, payment) {
         done(err);
       });
@@ -43,7 +43,7 @@ describe('Payment', function() {
   });
 
   describe("delete()", function() {
-    it("should delete an payment", function(done) {
+    it("should delete a payment", function(done) {
       payment.delete(function(err, payment) {
         done(err);
       });
