@@ -1,7 +1,7 @@
 #Freshbooks.js
 
-Freshbooks.js is a node.js module providing a wrapper to the  
-[FreshBooks](http://www.freshbooks.com) API.
+Freshbooks.js is a node.js module providing a wrapper to the [FreshBooks]
+(http://www.freshbooks.com) API.
 
 ## Installation
 
@@ -17,7 +17,7 @@ utility that is needed for compiling.  **This command must be in your path.**
     var FreshBooks = require("freshbooks");
     
     var freshbooks = new FreshBooks(URL,TOKEN)
-      , invoice = freshbooks.Invoice();
+      , invoice = new freshbooks.Invoice();
 
     invoice.get(INVOICE_ID, function(err, invoice) {
       if(err) {
