@@ -1,6 +1,6 @@
 {
   "name": "freshbooks"
-  , "version": "0.1.0"
+  , "version": "0.1.1"
   , "description": "Node.js wrapper for FreshBooks (www.freshbooks.com) API"
   , "author": "Marc Loney <marc@metacrash.com.au>"
   , "homepage": "https://github.com/Metacrash/freshbooks.js"

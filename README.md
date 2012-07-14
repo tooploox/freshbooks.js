@@ -3,6 +3,10 @@
 Freshbooks.js is a node.js module providing a wrapper to the [FreshBooks]
 (http://www.freshbooks.com) API.
 
+All API method are fairly well documented at [FreshBooks Developers]
+(http://developers.freshbooks.com) but if you find a discrepancy between the 
+docs and this wrapper feel free to file an "Issue".
+
 ## Installation
 
     $ npm install freshbooks
@@ -16,18 +20,22 @@ utility that is needed for compiling.  **This command must be in your path.**
 
     var FreshBooks = require("freshbooks");
     
-    var freshbooks = new FreshBooks(URL,TOKEN)
+    var freshbooks = new FreshBooks(api_url, api_token)
       , invoice = new freshbooks.Invoice();
 
-    invoice.get(INVOICE_ID, function(err, invoice) {
-      if(err) {
+    invoice.get(invoice_id, function(err, invoice) {
+      if(err) { //returns if an error has occured, ie invoice_id doesn't exist.
         console.log(err);
       } else {
-        console.log(invoice.number);
+        console.log("Invoice Number:" + invoice.number);
       }
     });
 
 ## Changelog
+
+**Update 14/7:** Just entered version 0.1.1! Most methods now accept an optional
+id first argument (similar to how invoice.get() works). Examples have been 
+updated *and* all tests are passing.
 
 **Update 8/7:** We've just entered version 0.1.0! All required API features are 
 now implemented excluding callback and system.

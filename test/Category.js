@@ -7,7 +7,7 @@ describe('Category', function() {
 
   describe("create()", function() {
     it("should create a new category", function(done) {
-      category.name = "Test Category"
+      category.name = "Test Category";
 
       category.create(function(err, category) {
         done(err);
