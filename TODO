@@ -1,3 +1,2 @@
- - Impliment {page, per_page, pages, total} attributes for Invoice/Estimate.list()
  - Use XML builder rather than string concat in Invoice/Estimate.list()
  - Impliment custom email in Invoice/Estimate.sendByEmail()

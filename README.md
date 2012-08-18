@@ -33,6 +33,9 @@ utility that is needed for compiling.  **This command must be in your path.**
 
 ## Changelog
 
+**Update 18/8:** Version 0.1.2 has just been pushed. There is now an "options" 
+object containing page, per_page, pages and total accessible from list methods.
+
 **Update 14/7:** Just entered version 0.1.1! Most methods now accept an optional
 id first argument (similar to how invoice.get() works). Examples have been 
 updated *and* all tests are passing.
