@@ -1,2 +1,27 @@
  - Use XML builder rather than string concat in Invoice/Estimate.list()
  - Impliment custom email in Invoice/Estimate.sendByEmail()
+
+var estimate = new self.freshbooks.Estimate()
+            , xml = libxml.Document()
+            , response = xml.node("response", a.toString())
+            , estimates = [];
+            
+          response.attr("xmlns", "http://www.freshbooks.com/api/");
+          response.attr("status", "ok");
+          //response.cdata(a.toString());
+          
+          console.log(xml);
+          
+          estimate._getXML(xml, function() {
+            estimates.push(estimate);
+          });
+
+
+//this isn't a direct correlation of the API
+CLIENT.credits
+
+
+CLIENT.notification && .contacts (API is different to documentation, need to confirm what is happening here!?)
+we're actually not even implimenting contacts, need to fix?
+
+we can remove options from .list declaration completely as its hoisted
