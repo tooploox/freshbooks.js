@@ -33,6 +33,11 @@ utility that is needed for compiling.  **This command must be in your path.**
 
 ## Changelog
 
+**Update 17/10:** ...and version 0.2.0 has landed! We are now using the latest
+version of libxmljs (currently version 0.6.1). We have also added an "options" 
+object to contain invoice_id, subject and message to 
+[Estimate,Invoice].sendByEmail, allowing for custom email messages.
+
 **Update 18/8:** Version 0.1.2 has just been pushed. There is now an "options" 
 object containing page, per_page, pages and total accessible from list methods.
 
