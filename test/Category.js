@@ -7,7 +7,7 @@ describe('Category', function() {
 
   describe("create()", function() {
     it("should create a new category", function(done) {
-      category.name = "Test Category";
+      category.name = "Test Category 1";
 
       category.create(function(err, category) {
         done(err);
@@ -16,7 +16,7 @@ describe('Category', function() {
   });
 
   describe("update()", function() {
-    it("should update an category", function(done) {
+    it("should update a category", function(done) {
       category.name = "Test Category 2";
       
       category.update(function(err, category) {
@@ -26,7 +26,7 @@ describe('Category', function() {
   });
 
   describe("get()", function() {
-    it("should get an category", function(done) {
+    it("should get a category", function(done) {
       category.get(category.category_id, function(err, category) {
         done(err);
       });
@@ -42,7 +42,7 @@ describe('Category', function() {
   });
 
   describe("delete()", function() {
-    it("should delete an category", function(done) {
+    it("should delete a category", function(done) {
       category.delete(function(err, category) {
         done(err);
       });
