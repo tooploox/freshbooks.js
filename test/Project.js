@@ -8,7 +8,7 @@ describe('Project', function() {
   describe("create()", function() {
     it("should create a new project", function(done) {
       project.name = "Test Project";
-      project.bill_method = "project-rate";
+      project.bill_method = "task-rate";
 
       project.create(function(err, project) {
         done(err);
