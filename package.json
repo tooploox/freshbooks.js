@@ -7,10 +7,10 @@
   , "email": "<marc@metacrash.com.au>"
   }
 , "homepage": "https://github.com/Metacrash/freshbooks.js"
-, "dependencies": { "libxmljs": "0.13.0" }
+, "dependencies": { "libxmljs": "0.14.0" }
 , "main": "index"
 , "engines": { "node": ">= 0.6.0" }
-, "devDependencies": { "mocha": "0.3.x" }
+, "devDependencies": { "mocha": "2.2.x" }
 , "scripts": { "test": "make test" }
 , "publishConfig": { "tag": "latest" }
 , "repository": {
