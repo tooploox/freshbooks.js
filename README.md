@@ -37,6 +37,8 @@ utility that is needed for compiling.  **This command must be in your path.**
 
 ## Changelog
 
+**Update 2016-05-31:** Added support for node v5 and v6. Updated libxmljs to 0.18.0. Bumped the version to 1.0.1.
+
 **Update 05/10/2015:** Project maintenance taken over by Flow XO. Fixed issue with Invoice lines. Created `invoice.lines.add` function. Added support for node v4. Updated libxmljs to 0.14.3. Bumped the version to 1.0.0.
 
 Note: this is a backwards-compatible release. If you were previously using v0.2.1, you should be safe to upgrade to v1.0.0.
