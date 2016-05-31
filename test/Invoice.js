@@ -22,8 +22,12 @@ describe('Invoice', function() {
 
   describe("update()", function() {
     it("should update an invoice", function(done) {
-      invoice.notes = "Lorem Ipsum";
-      invoice.update(function(err, invoice) {
+      var invoiceId = invoice.invoice_id;
+
+      var updatingInvoice = new freshbooks.Invoice();
+      updatingInvoice.invoice_id = invoiceId;
+      updatingInvoice.notes = "Lorem Ipsum";
+      updatingInvoice.update(function(err, invoice) {
         done(err);
       });
     });
@@ -35,16 +39,16 @@ describe('Invoice', function() {
         done(err);
       });
     });
-  });  
-  
+  });
+
   describe("sendByEmail()", function() {
     it("should send an invoice by email", function(done) {
       invoice.sendByEmail(function(err, invoice) {
         done(err);
       });
     });
-  });  
-  
+  });
+
   describe("list()", function() {
     it("should list an array of invoices", function(done) {
       invoice.list({"client_id": invoice.client_id}, function(err, invoices) {
@@ -59,5 +63,5 @@ describe('Invoice', function() {
         done(err);
       });
     });
-  });  
+  });
 });
