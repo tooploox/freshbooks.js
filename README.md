@@ -1,4 +1,8 @@
-#Freshbooks.js
+# Freshbooks.js
+
+[![Build Status](https://travis-ci.org/flowxo/freshbooks.js.svg?branch=master)](https://travis-ci.org/flowxo/freshbooks.js)
+[![npm version](https://badge.fury.io/js/freshbooks.svg)](http://badge.fury.io/js/freshbooks.js)
+[![Dependency Status](https://david-dm.org/flowxo/freshbooks.js.svg)](https://david-dm.org/flowxo/freshbooks.js)
 
 Freshbooks.js is a node.js module providing a wrapper to the [FreshBooks]
 (http://www.freshbooks.com) API.
