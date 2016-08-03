@@ -1,7 +1,7 @@
 {
     "name": "freshbooks",
     "description": "Node.js wrapper for FreshBooks (www.freshbooks.com) API",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "author": "Flow XO <support@flowxo.com>",
     "contributors": [{
         "name": "Marc Loney",

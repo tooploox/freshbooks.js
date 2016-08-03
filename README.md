@@ -37,6 +37,12 @@ utility that is needed for compiling.  **This command must be in your path.**
 
 ## Changelog
 
+**v2.0.0 - 2016-09-03**
+
+- Fixed an issue with the `Content-Length` header not respecting multi-byte strings encoded with UTF-8 [#2](/../../issues/2)
+
+_Note: this may break existing code that works around this, hence the major bump to v2.0.0. Most implementations will be able to upgrade to v2.0.0 without any issues._
+
 **Update 2016-05-31:** Added support for node v5 and v6. Updated libxmljs to 0.18.0. Bumped the version to 1.0.1.
 
 **Update 05/10/2015:** Project maintenance taken over by Flow XO. Fixed issue with Invoice lines. Created `invoice.lines.add` function. Added support for node v4. Updated libxmljs to 0.14.3. Bumped the version to 1.0.0.
